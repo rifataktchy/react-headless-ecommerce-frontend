@@ -8,7 +8,6 @@ const MainLayout = () => {
             {/* navbar */}
             <Navbar/>
             {/* dynamic section */}
-            {/* min-h-[calc(100vh-288px)] */}
             <div className="min-h-[calc(100vh-288px)] container mx-auto">
              <Outlet/>
             </div>

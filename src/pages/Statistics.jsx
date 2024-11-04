@@ -2,8 +2,8 @@
 
 const Statistics = () => {
     return (
-        <div>
-           statistics 
+        <div className="p-10">
+           <p>This page is under construction. it will be uploaded soon. </p> 
         </div>
     );
 };

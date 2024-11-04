@@ -1,0 +1,22 @@
+[
+    {
+      "id": 1,
+      "category": "Computers",
+      "slug": "computers"
+    },
+    {
+      "id": 2,
+      "category": "Phones",
+      "slug": "phones"
+    },
+    {
+      "id": 3,
+      "category": "Smartwatches",
+      "slug": "smartwatches"
+    },
+    {
+      "id": 4,
+      "category": "Power Banks",
+      "slug": "power-banks"
+    }
+  ]

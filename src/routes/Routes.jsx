@@ -3,6 +3,8 @@ import MainLayout from "../layouts/MainLayout";
 import Home from "../pages/Home";
 import Statistics from "../pages/Statistics";
 import Dashboard from "../pages/Dashboard";
+import ProductCards from "../components/ProductCards";
+import ProductDetails from "../pages/ProductDetails";
 
 const routes = createBrowserRouter ([
     {
@@ -12,6 +14,19 @@ const routes = createBrowserRouter ([
         {
             path: "/",
             element: <Home/>,  
+            loader: () => fetch('../categories.json'),
+            children: [
+              {
+                path: "/",
+            element: <ProductCards/>, 
+            loader: () => fetch('../products.json'),
+              },
+              {
+                path: "/category/:category",
+            element: <ProductCards/>, 
+            loader: () => fetch('../products.json'),
+              },
+            ],
         },
         {
             path: "/statistics",
@@ -21,6 +36,11 @@ const routes = createBrowserRouter ([
             path: "/dashboard",
             element: <Dashboard />,  
         },
+        {
+          path: "/product/:product_id",
+          element: <ProductDetails />,  
+          loader: () => fetch('../products.json'),
+      },
       ],
     },
   ]);

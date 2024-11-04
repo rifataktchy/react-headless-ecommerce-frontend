@@ -1,0 +1,162 @@
+[
+    {
+      "product_id": 1,
+      "product_title": "UltraBook Pro 15",
+      "product_image": "https://i.ibb.co/3zN8f82/Ultra-Book-Pro-15.jpg",
+      "category": "Computers",
+      "price": 1299,
+      "description": "A powerful 15-inch laptop with advanced processing and ultra-thin design.",
+      "Specification": [
+        "Intel Core i7 Processor",
+        "16GB RAM",
+        "512GB SSD",
+        "15.6 inch Full HD Display"
+      ],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": 2,
+      "product_title": "Gaming Laptop X9",
+      "product_image": "https://i.ibb.co/yf82r8m/Gaming-Laptop-X9.png",
+      "category": "Computers",
+      "price": 1599,
+      "description": "High-performance laptop designed for gamers with top-tier graphics and cooling.",
+      "Specification": [
+        "AMD Ryzen 9 Processor",
+        "32GB RAM",
+        "1TB SSD",
+        "NVIDIA GeForce RTX 3070"
+      ],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": 3,
+      "product_title": "Eco Chromebook 14",
+      "product_image": "https://i.ibb.co/pP2KKCF/Eco-Chromebook-14.jpg",
+      "category": "Computers",
+      "price": 299,
+      "description": "Lightweight and energy-efficient Chromebook perfect for everyday tasks.",
+      "Specification": [
+        "Intel Celeron Processor",
+        "4GB RAM",
+        "64GB eMMC",
+        "14 inch HD Display"
+      ],
+      "availability": true,
+      "rating": 4.3
+    },
+    {
+      "product_id": 4,
+      "product_title": "Desktop Power Station",
+      "product_image": "https://i.ibb.co/RP8jVb2/Desktop-Power-Station.jpg",
+      "category": "Computers",
+      "price": 849,
+      "description": "A compact yet powerful desktop station for intensive multitasking and productivity.",
+      "Specification": [
+        "Intel Core i5 Processor",
+        "8GB RAM",
+        "256GB SSD",
+        "Dual Monitor Support"
+      ],
+      "availability": false,
+      "rating": 4.2
+    },
+    {
+      "product_id": 5,
+      "product_title": "All-in-One PC 24",
+      "product_image": "https://i.ibb.co/ScF4XtG/All-in-One-PC-24.jpg",
+      "category": "Computers",
+      "price": 699,
+      "description": "Sleek all-in-one desktop with a 24-inch display, perfect for home office setups.",
+      "Specification": [
+        "Intel Core i3 Processor",
+        "8GB RAM",
+        "512GB SSD",
+        "24 inch Full HD Display"
+      ],
+      "availability": true,
+      "rating": 4.1
+    },
+    {
+      "product_id": 6,
+      "product_title": "Portable Mini Laptop",
+      "product_image": "https://i.ibb.co/YkJ6Brc/Portable-Mini-Laptop.jpg",
+      "category": "Computers",
+      "price": 499,
+      "description": "Compact and ultra-portable mini laptop with essential features for on-the-go productivity.",
+      "Specification": [
+        "Intel Pentium Processor",
+        "4GB RAM",
+        "128GB SSD",
+        "11.6 inch HD Display"
+      ],
+      "availability": true,
+      "rating": 4.0
+    },
+    {
+      "product_id": 7,
+      "product_title": "Smartphone Max 12",
+      "product_image": "https://i.ibb.co/7GFm6Hr/Smartphone-Max-12.jpg",
+      "category": "Phones",
+      "price": 799,
+      "description": "Flagship smartphone with a stunning display and powerful camera system.",
+      "Specification": [
+        "6.7 inch OLED Display",
+        "Triple-Lens Camera",
+        "128GB Storage",
+        "5G Enabled"
+      ],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": 8,
+      "product_title": "Lite Smartphone 5",
+      "product_image": "https://i.ibb.co/NC45JRv/Lite-Smartphone-5.jpg",
+      "category": "Phones",
+      "price": 349,
+      "description": "Affordable smartphone with all the essentials and a long-lasting battery.",
+      "Specification": [
+        "6.1 inch HD Display",
+        "Single-Lens Camera",
+        "64GB Storage",
+        "4G Enabled"
+      ],
+      "availability": true,
+      "rating": 4.4
+    },
+    {
+      "product_id": 9,
+      "product_title": "Smartwatch Fit Pro",
+      "product_image": "https://i.ibb.co/fCqJGrZ/Smartwatch-Fit-Pro.jpg",
+      "category": "Smartwatches",
+      "price": 249,
+      "description": "Advanced fitness smartwatch with health tracking and GPS.",
+      "Specification": [
+        "1.5 inch AMOLED Display",
+        "Heart Rate Monitor",
+        "GPS",
+        "Water Resistant"
+      ],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": 10,
+      "product_title": "Power Bank Ultra 20,000mAh",
+      "product_image": "https://i.ibb.co/Fw7vbt5/Power-Bank-Ultra-20.jpg",
+      "category": "Power Banks",
+      "price": 59,
+      "description": "High-capacity power bank with fast-charging technology.",
+      "Specification": [
+        "20,000mAh Capacity",
+        "Dual USB Output",
+        "Quick Charge 3.0",
+        "LED Indicator"
+      ],
+      "availability": true,
+      "rating": 4.6
+    }
+  ]
