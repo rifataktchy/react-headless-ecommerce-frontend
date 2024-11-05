@@ -158,5 +158,21 @@
       ],
       "availability": true,
       "rating": 4.6
+    },
+    {
+      "product_id": 11,
+      "product_title": "Smartwatch",
+      "product_image": "https://i.ibb.co/f4D9V0s/smart-watch.webp",
+      "category": "Smartwatches",
+      "price": 380,
+      "description": "Advanced fitness smartwatch with health tracking and GPS.",
+      "Specification": [
+        "1.5 inch AMOLED Display",
+        "Heart Rate Monitor",
+        "GPS",
+        "Water Resistant"
+      ],
+      "availability": true,
+      "rating": 4.8
     }
   ]
