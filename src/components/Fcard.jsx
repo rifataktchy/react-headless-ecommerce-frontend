@@ -6,7 +6,7 @@ const Fcard = ({product}) => {
         <div className="flex justify-between border-gray-300 shadow-lg w-full">
             <div className="p-5 m-2 flex h-[150px] w-[1000px]">
             
-            <img className="h-20" src={product_image} alt='img'/>
+            <img className="h-20 rounded-lg" src={product_image} alt='img'/>
             <div className="flex flex-col">
             <h1>{product.product_title}</h1>
             <p>{product.description}</p>
