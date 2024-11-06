@@ -7,6 +7,8 @@ import ProductCards from "../components/ProductCards";
 import ProductDetails from "../pages/ProductDetails";
 import Wishlist from "../components/Wishlist";
 import FavouriteCards from "../components/FavouriteCards";
+import Contact from "../pages/Contact";
+import NotFound from "../components/NotFound";
 
 const routes = createBrowserRouter ([
     {
@@ -51,9 +53,17 @@ const routes = createBrowserRouter ([
             ], 
         },
         {
+          path: "/contact",
+          element: <Contact />,  
+      },
+        {
           path: "/product/:product_id",
           element: <ProductDetails />,  
           loader: () => fetch('../products.json'),
+      },
+      {
+        path: "*",
+        element: <NotFound />,
       },
       ],
     },

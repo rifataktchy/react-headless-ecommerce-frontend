@@ -1,7 +1,7 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { getAllFavourites, getAllWishlists } from '../Utils';
 
 const Navbar = () => {
@@ -10,16 +10,16 @@ const Navbar = () => {
       const favourites= getAllFavourites()
       setProducts(favourites)
     },[products])
-    console.log(products.length)
+  
 
     const [wishlists, setWishlists] =useState([])
     useEffect(()=>{
       const wishlists= getAllWishlists()
       setWishlists(wishlists)
-    },[products])
+    },[wishlists])
 
   const {pathname} = useLocation()
-  const backgroundColor = (pathname === '/dashboard' || pathname === '/statistics' || pathname=== '/dashboard/favouritecard' || pathname=== '/dashboard/wishlist') ? 'bg-white text-black' : 'bg-purple-500';
+  const backgroundColor = (pathname === '/dashboard' || pathname === '/statistics' || pathname === '/contact' || pathname=== '/dashboard/favouritecard' || pathname=== '/dashboard/wishlist') ? 'bg-white text-black' : 'bg-purple-500';
 
     return (
         <div className={`${backgroundColor} navbar container mx-auto mt-4`}>
@@ -42,9 +42,10 @@ const Navbar = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <NavLink to='/' className={({isActive}) => `font-bold ${isActive ? 'font-bold rounded-lg p-2': 'hover:font-xl'}`}>Home</NavLink>
+              <NavLink to='/' className={({isActive}) => `font-bold ${isActive ? 'font-bold text-purple-500 rounded-lg p-2': 'hover:font-xl'}`}>Home</NavLink>
       <NavLink to='/statistics' className={({isActive}) => `font-bold ${isActive ? 'font-bold text-purple-500 rounded-lg p-2': 'hover:font-xl'}`}>Statistics</NavLink>
       <NavLink to='/dashboard' className={({isActive}) => `font-bold ${isActive ? 'font-bold text-purple-500 rounded-lg p-2': 'hover:font-xl'}`}>Dashboard</NavLink>
+      <NavLink to='/contact' className={({isActive}) => `font-bold ${isActive ? 'font-bold text-purple-500 rounded-lg p-2': 'hover:font-xl'}`}>Contact</NavLink>
       </ul>
     </div>
     <div className="text-black font-bold text-2xl">
@@ -56,11 +57,12 @@ const Navbar = () => {
       <NavLink to='/' className={({isActive}) => `font-bold ${isActive ? 'font-bold rounded-lg p-2': 'hover:font-xl'}`}>Home</NavLink>
       <NavLink to='/statistics' className={({isActive}) => `font-bold ${isActive ? 'font-bold text-purple-500 rounded-lg p-2': 'hover:font-xl'}`}>Statistics</NavLink>
       <NavLink to='/dashboard' className={({isActive}) => `font-bold ${isActive ? 'font-bold text-purple-500 rounded-lg p-2': 'hover:font-xl'}`}>Dashboard</NavLink>
+      <NavLink to='/contact' className={({isActive}) => `font-bold ${isActive ? 'font-bold text-purple-500 rounded-lg p-2': 'hover:font-xl'}`}>Contact</NavLink>
     </ul>
   </div>
   <div className="navbar-end flex flex-row gap-4 justify-end items-center">
-    <NavLink to='/dashboard/favouritecard' className=""><IoCartOutline className="text-2xl m-2 bg-white rounded-full p-1"/><span className="absolute top-4 right-21 bg-gray-500 text-white rounded-full p-1">{products.length}</span></NavLink>
-  <NavLink to='/dashboard/wishlist' className=""><FaRegHeart className="text-2xl m-2 bg-white rounded-full p-1"/><span className="absolute top-4 right-21 bg-gray-500 text-white rounded-full p-1">{wishlists.length}</span> </NavLink>
+    <NavLink to='/dashboard/favouritecard' className=""><IoCartOutline className="text-2xl m-2 bg-white rounded-full p-1"/><span className="absolute top-5 right-21 text-red-500 font-bold rounded-full p-1">{products.length}</span></NavLink>
+  <NavLink to='/dashboard/wishlist' className=""><FaRegHeart className="text-2xl m-2 bg-white rounded-full p-1"/><span className="absolute top-5 right-21 text-red-500 font-bold rounded-full p-1">{wishlists.length}</span> </NavLink>
   </div>
 </div>
     );

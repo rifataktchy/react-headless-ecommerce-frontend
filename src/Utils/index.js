@@ -6,11 +6,13 @@ const getAllFavourites = () => {
     if(all){
         const favourites = JSON.parse(all);
         return favourites
+        
     }else {
         return[]
     }
     
 }
+
 
 
 
@@ -40,7 +42,7 @@ const addFavourite = (product, setFavouritesCount) => {
     // // Update the favourites count in context
     // setFavouritesCount(favourites.length);
 
-    toast.success('Successfully added!');
+    toast.success('Successfully added to card!');
 }
 
 const addWishlist = (product, setWishlistsCount) => {
@@ -55,7 +57,7 @@ const addWishlist = (product, setWishlistsCount) => {
     // // Update the wishlists count in context
     // setWishlistsCount(wishlists.length);
     
-    toast.success('Successfully added!');
+    toast.success('Successfully added to wishlist!');
 }
 
 // remove product from local storage

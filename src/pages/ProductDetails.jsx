@@ -3,7 +3,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { FaRegHeart } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
 import { addFavourite,  getAllFavourites, addWishlist, getAllWishlists} from "../Utils";
-import toast from "react-hot-toast";
+import StarRatings from 'react-star-ratings';
 
 const ProductDetails = () => {
     const data = useLoaderData()
@@ -57,7 +57,21 @@ if(isExist){
                     <p className="text-green-700 border w-20 border-green-700 rounded-full pl-2">{product.availability ? 'In Stock' : 'Out of Stock'}</p>
                     <p>{product.description}</p> 
                     <p>{product.Specification}</p> 
-                    <p>{product.rating}</p>
+                    
+                    {/* Rating display */}
+            <div className="flex items-center gap-1">
+              <StarRatings
+                rating={product.rating} 
+                starRatedColor="yellow" 
+                changeRating={() => {}} 
+                numberOfStars={5}
+                starDimension="24px" 
+                starSpacing="3px" 
+                isSelectable={false} 
+              />
+           
+                <span>{product.rating}</span>  
+            </div>
                     <div className="flex flex-row justify-start items-center gap-4">
                     <button disabled={isFavourite} onClick={()=>handleFavourite(product)} className="flex flex-row justify-center items-center bg-purple-500 rounded-lg p-1">Add to Card<IoCartOutline className=""/></button>
                     
