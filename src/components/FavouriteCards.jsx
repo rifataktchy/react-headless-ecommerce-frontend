@@ -10,30 +10,31 @@ const FavouriteCards = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
+        // Fetch favourites from local storage on component mount or after clearing
         const favourites = getAllFavourites();
-        setProducts(favourites); 
-        setSortedProducts(favourites); 
-    }, []);
+        setProducts(favourites);
+        setSortedProducts(favourites);
+    }, [isModalOpen]); // Trigger refresh after purchase (when modal closes)
 
     const sortByPriceDesc = () => {
         const sorted = [...products].sort((a, b) => b.price - a.price);
-        setSortedProducts(sorted); 
+        setSortedProducts(sorted);
     };
 
     const totalCost = sortedProducts.reduce((accumulator, product) => {
-        return accumulator + (product.price || 0); 
+        return accumulator + (product.price || 0);
     }, 0);
 
     const handlePurchase = () => {
-        setIsModalOpen(true); 
-        clearFavourites(); // Clear persistent storage
-        setProducts([]); // Update state to reflect empty cart
-        setSortedProducts([]); // Update sortedProducts to be empty
+        setIsModalOpen(true);
+        clearFavourites();
+        setProducts([]); 
+        setSortedProducts([]); 
     };
 
     const closeModal = () => {
         setIsModalOpen(false);
-        navigate('/'); // Redirect to the home page
+        navigate('/'); 
     };
 
     return (
@@ -42,12 +43,12 @@ const FavouriteCards = () => {
                 <div className='font-bold text-xl'>Cards</div>
                 <div className='flex gap-2'>
                     <div className='font-bold'>Total Cost: ${totalCost.toFixed(2)}</div>
-                    
+
                     <button onClick={sortByPriceDesc} className='border border-purple-500 rounded-lg px-2'>
                         Sort By Price
                     </button>
-                    <button 
-                        onClick={handlePurchase} 
+                    <button
+                        onClick={handlePurchase}
                         className='border border-purple-500 rounded-lg px-2'
                         disabled={totalCost === 0}
                     >
@@ -58,7 +59,7 @@ const FavouriteCards = () => {
 
             <div>
                 {sortedProducts.length > 0 ? (
-                    sortedProducts.map(product => (
+                    sortedProducts.map((product) => (
                         <Fcard key={product.product_id} product={product} />
                     ))
                 ) : (
@@ -72,10 +73,7 @@ const FavouriteCards = () => {
                         <h2 className="text-2xl font-bold mb-4">Congratulations!</h2>
                         <p>Your purchase was successful.</p>
                         <div className="modal-action">
-                            <button 
-                                onClick={closeModal} 
-                                className="btn btn-primary"
-                            >
+                            <button onClick={closeModal} className="btn btn-primary">
                                 Close
                             </button>
                         </div>
