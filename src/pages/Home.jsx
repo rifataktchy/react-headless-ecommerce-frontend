@@ -22,9 +22,9 @@ const Home = () => {
           title={<>Upgrade Your Tech Accessorize with<br />Gadget Heaven Accessories</>} 
           subtitle={<>Explore the latest gadgets that will take your experience to the next level. From smart devices <br/> to the coolest accessories, we have it all!</>} 
         />
-        <button onClick={()=> navigate('/dashboard')} className="bg-white text-purple-600 flex flex-col justify-start items-center font-bold px-4 py-2 rounded-lg mt-8">Shop Now</button>
+        <button onClick={()=> navigate('/dashboard')} className="bg-white text-purple-600 flex flex-col justify-start items-center font-bold px-4 sm:py-1 md:py-2 rounded-lg sm:mt-1 sm:mb-10 md:mt-8">Shop Now</button>
         </div>
-        <div className="h-80"></div>
+        <div className="sm:h-10 md:h-80"></div>
             {/* banner */} 
             <Banner/>
             {/* category section and nested category */}

@@ -8,9 +8,9 @@ const Wishlist = () => {
       const wishlists= getAllWishlists()
       setProducts(wishlists)
     },[])
-    console.log(products.length)
+  
     return (
-        <div>
+        <div className="w-11/12">
             <div>
 
             </div>

@@ -10,7 +10,7 @@ const Wcard = ({product}) => {
             <img className="h-20 rounded-lg" src={product_image} alt='img'/>
             <div className="flex flex-col">
             <p>Name:{product_title}</p>
-            <h1>Price: {price}k</h1>
+            <h1>Price: {price}$</h1>
             </div>
         </div>
         <button><FaRegWindowClose /></button>

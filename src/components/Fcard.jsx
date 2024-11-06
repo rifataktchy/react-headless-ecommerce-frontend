@@ -10,7 +10,7 @@ const Fcard = ({product}) => {
             <div className="flex flex-col">
             <h1>{product.product_title}</h1>
             <p>{product.description}</p>
-            <p>Price: {product.price}</p>
+            <p>Price: {product.price}$</p>
             </div>
             
             </div>

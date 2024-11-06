@@ -61,5 +61,12 @@ const addWishlist = (product, setWishlistsCount) => {
 }
 
 // remove product from local storage
+const clearFavourites = () => {
+    localStorage.setItem('favourites', JSON.stringify([]));
+};
 
-export {addFavourite, getAllFavourites, addWishlist, getAllWishlists,}
+const clearWishlists = () => {
+    localStorage.setItem('wishlists', JSON.stringify([]));
+};
+
+export {addFavourite, getAllFavourites, addWishlist, getAllWishlists, clearFavourites, clearWishlists}

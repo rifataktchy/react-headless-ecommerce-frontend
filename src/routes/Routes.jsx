@@ -41,7 +41,7 @@ const routes = createBrowserRouter ([
             element: <Dashboard />, 
             children: [
               {
-                path: "/dashboard/favouriteCard",
+                path: "",
             element: <FavouriteCards />, 
            
               },

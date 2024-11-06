@@ -5,9 +5,9 @@ const Categories = ({categories}) => {
     return (
         <>
         <h1 className="flex justify-center items-center font-bold text-black text-2xl pb-6">Explore Cutting-Edge Gadgets</h1>
-        <div className="flex">
+        <div className="md:flex">
            
-              <div className="flex flex-col w-2/12 font-bold">
+              <div className="flex flex-col sm:w-11/12 md:w-3/12 font-bold">
               
               <NavLink
                  to={`/`}
@@ -24,7 +24,7 @@ const Categories = ({categories}) => {
                }
               </div>
             
-              <div className="w-9/12">
+              <div className="sm:w-11/12 md:w-9/12">
                 <Outlet />
               </div>
         </div>

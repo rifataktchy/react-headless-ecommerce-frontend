@@ -9,14 +9,14 @@ const Navbar = () => {
     useEffect(()=>{
       const favourites= getAllFavourites()
       setProducts(favourites)
-    },[products])
+    },[])
   
 
     const [wishlists, setWishlists] =useState([])
     useEffect(()=>{
       const wishlists= getAllWishlists()
       setWishlists(wishlists)
-    },[wishlists])
+    },[])
 
   const {pathname} = useLocation()
   const backgroundColor = (pathname === '/dashboard' || pathname === '/statistics' || pathname === '/contact' || pathname=== '/dashboard/favouritecard' || pathname=== '/dashboard/wishlist') ? 'bg-white text-black' : 'bg-purple-500';
@@ -48,7 +48,7 @@ const Navbar = () => {
       <NavLink to='/contact' className={({isActive}) => `font-bold ${isActive ? 'font-bold text-purple-500 rounded-lg p-2': 'hover:font-xl'}`}>Contact</NavLink>
       </ul>
     </div>
-    <div className="text-black font-bold text-2xl">
+    <div className="text-black font-bold text-2xl sm: text-sm">
     <Link to='/'>Gadget Heaven</Link>
     </div>
   </div>
