@@ -2,7 +2,7 @@
 
 A modern, responsive e-commerce frontend application built with React. The project simulates a real-world online shop experience, including product browsing, cart functionality, and wishlist management.
 
-🔗 Live Demo: https://gadget-heaven-rifhat.netlify.app/
+🔗 Live Demo: https://gadget-heaven-world.netlify.app/
 
 ---
 
