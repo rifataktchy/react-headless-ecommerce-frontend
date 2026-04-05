@@ -1,50 +1,64 @@
-# React E-Commerce Website
+# 🛍️ Gadget Shop – React E-commerce Frontend
 
-This is a React-based e-commerce website that allows users to browse and purchase gadgets, manage their favourites product and wishlists, and view detailed product information.
+A modern, responsive e-commerce frontend application built with React. The project simulates a real-world online shop experience, including product browsing, cart functionality, and wishlist management.
 
-## Live Website Link
+🔗 Live Demo: https://gadget-heaven-rifhat.netlify.app/
 
-You can view the live version of the website by clicking the link below:
+---
 
-https://gadget-heaven-rifhat.netlify.app/
+## 🚀 Overview
 
-## Requirement Document Link
+This project demonstrates a scalable frontend architecture for e-commerce applications. It focuses on clean UI design, reusable components, and user-centric features.
 
-The requirement document outlining the full features and technical specifications of the project can be accessed from the link below:
+The application is designed following a **headless commerce approach**, making it ready for integration with backend systems such as Shopware 6 Store API.
 
-https://github.com/ProgrammingHero1/B10-A8-gadget-heaven/blob/main/Batch-10_Assignment-08-.pdf 
+---
 
-## React Fundamental Concepts Used
+## ✨ Key Features
 
-In this project, the following React fundamentals have been used:
+- 🛍️ Product browsing with detailed product pages  
+- ❤️ Wishlist and favourites management (stored in localStorage)  
+- 🛒 Cart functionality with purchase flow  
+- 📊 Sort products by price  
+- 🔄 Dynamic routing using React Router  
+- 📱 Fully responsive design  
 
-1. React Router: For handling navigation between different pages (e.g., Product Details, Wishlist, Dashboard).
-2. State Management (useState): Used to manage component state (e.g., storing product details, wishlist items).
-3. useEffect Hook: Used to fetch data (like product information) when components mount and to trigger re-renders.
-4. Conditional Rendering: Displaying content based on specific conditions (e.g., showing "In Stock" or "Out of Stock" based on product availability).
-6. Event Handling: Handling user interactions, such as clicking buttons to add products to the wishlist or favourites.
+---
 
-## Data Handling and Management
+## 🧠 Technical Highlights
 
-For data handling and management, the following methods have been used:
+- Built with **React.js (Hooks + Component-based architecture)**
+- Implemented **React Router** for navigation and route-based data loading  
+- Managed state using `useState` and `useEffect`  
+- Used **localStorage** for persistent user data (wishlist, cart)  
+- Applied **conditional rendering** for dynamic UI behavior  
+- Structured code for scalability and maintainability  
 
-1. Local Storage:- Used to persist data like user preferences (wishlist, favourites) across page reloads. For example, when a user adds a product to their wishlist, it's stored in the local storage then I used it different places of code.
+---
 
-2. Data Loading with React Router Loaders:- I have used data loaders in React Router to fetch product details, categories, etc., directly when the route is accessed. This improves data handling by simplifying API calls and making data readily available to components on page load.
+## 🧩 Architecture
 
-## 5 Key Features of the Website
+This project follows a **frontend-focused, API-ready architecture**:
 
-1. Product Browsing and Details
-   - Users can browse different products and view detailed information about each one, including images, prices, availability, and specifications.
-   
-2.Favourites and Wishlist
-   - Users can add products to their favourites or wishlist. The products are stored locally, and the user can view their saved products at any time.
-   
-3. Sort Products by Price
-   - Users can sort products by price from high to low, making it easier to compare and select items based on their budget.
+- UI components are modular and reusable  
+- Data layer is structured for easy API integration  
+- Routing is separated and scalable  
 
-4. Add Products to Cart (Optional)
-   - Users can add products to the cart for purchase, and the cart persists across pages.
+👉 The application is prepared to integrate with e-commerce backends such as **Shopware 6 Store API**.
 
-5. Purchase
-   - Users can purchase products and a modal will come to show that purchase is done
+---
+
+## 🔌 Backend Integration (Planned)
+
+Currently, the project uses mock/static data.
+
+However, it is designed to support real backend integration, including:
+
+- Product and category APIs  
+- Dynamic pricing and filtering  
+- Cart and checkout systems  
+
+Example (planned integration):
+
+```js
+const BASE_URL = "http://localhost:8000/store-api";
